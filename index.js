@@ -64,6 +64,8 @@ document.getElementById("rollDice").addEventListener("click", function () {
     if (diceNumber !== 1) {
       currentScoring(diceNumber);
     } else {
+      const audio = new Audio("./audio/alarm.wav");
+      audio.play();
       switchPlayer();
     }
   }
