@@ -38,6 +38,8 @@ function initialization() {
     convertToPersianDigits(0);
   player1.classList.add("player--active");
   player2.classList.remove("player--active");
+  const audio = new Audio("./audio/gamestart.mp3");
+  audio.play();
 }
 initialization();
 
