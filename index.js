@@ -85,6 +85,8 @@ document.getElementById("holdScore").addEventListener("click", function () {
         convertToPersianDigits(currentSum);
       document.querySelector(`.winner-${i}`).classList.remove("hidden");
       document.querySelector(`.current-scores-${i}`).style.top = "1.5vh";
+      const audio = new Audio("./audio/winner.mp3");
+      audio.play();
       playing = false;
     } else {
       switchPlayer();
