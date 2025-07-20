@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>بازی تاس🎲</title>
+  </head>
+  <body style="direction: rtl">
+    <div class="main-template">
+      <div class="grid">
+        <section class="player-1 player--active">
+          <h1>بازیکن 1</h1>
+          <h2 id="totalScore-1">0</h2>
+          <h2 class="winner-1 hidden">🥳🥳🥳</h2>
+          <div class="current-scores-1">
+            <h3 class="current-score-label">امتیاز فعلی</h3>
+            <h3 id="currentScore-1">0</h3>
+          </div>
+        </section>
+        <section class="player-2">
+          <h1>بازیکن 2</h1>
+          <h2 id="totalScore-2">0</h2>
+          <h2 class="winner-2 hidden">🥳🥳🥳</h2>
+          <div class="current-scores-2">
+            <h3 class="current-score-label">امتیاز فعلی</h3>
+            <h3 id="currentScore-2">0</h3>
+          </div>
+        </section>
+      </div>
+      <img src="./images/dice-5.svg" alt="dice" class="img-dice hidden" />
+      <button class="new-game" id="newGame">بازی جدید 🔃</button>
+      <button class="roll-dice" id="rollDice">تاس رو بنداز🎲</button>
+      <button class="hold-score" id="holdScore">امتیاز رو حساب کن 🤩</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
