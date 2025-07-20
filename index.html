@@ -16,6 +16,7 @@
   </head>
   <body style="direction: rtl">
     <div class="main-template">
+      <a href="#" class="guidance">راهنما</a>
       <div class="grid">
         <section class="player-1 player--active">
           <h1 class="player-num-1">بازیکن 1</h1>
@@ -41,6 +42,21 @@
       <button class="roll-dice" id="rollDice">تاس رو بنداز🎲</button>
       <button class="hold-score" id="holdScore">امتیاز رو حساب کن 🤩</button>
     </div>
+    <div class="modal-window hidden">
+      <span class="close">&times</span>
+      <div class="game-explain">
+        <p>سلام👋</p>
+        <p>
+          بازی اینجوریه که بازیکن اول تاس رو مینداره، هر عدد که اومد توی امتیاز
+          فعلی نمایش داده میشه. اگر "دکمه امتیاز رو حساب کن🤩" رو بزنی، امتیازت
+          حفظ میشه اما نوبت به بازیکن بعدی می رسه. اما اگر دکمه رو نزنی میتونی
+          بازم تاس بندازی و توی امتیاز فعلیت میاد. هروقت تاس "یک" اومد تمام
+          امتیاز فعلیت می سوزه و نوبت به بازیکن بعدی میرسه. هر بازیکنی که زودتر
+          به امتیاز "صد" برسه، برنده بازیه🥳🥳🥳
+        </p>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
     <script src="index.js"></script>
   </body>
 </html>

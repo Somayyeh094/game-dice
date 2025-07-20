@@ -94,3 +94,14 @@ document.getElementById("holdScore").addEventListener("click", function () {
 
 // button New Game
 document.getElementById("newGame").addEventListener("click", initialization);
+
+// Guidance window
+
+function toggleClass() {
+  document.querySelector(".modal-window").classList.toggle("hidden");
+  document.querySelector(".overlay").classList.toggle("hidden");
+}
+
+document.querySelector(".guidance").addEventListener("click", toggleClass);
+document.querySelector(".close").addEventListener("click", toggleClass);
+document.querySelector(".overlay").addEventListener("click", toggleClass);
